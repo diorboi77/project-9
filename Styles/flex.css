@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.Flex{
+    color: white;
+    margin-bottom: 20px;
+    height: 450px;
+    border: 2px solid blue;
+    display: flex;
+    font-size: 25px;
+}
+.Flex-inner{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+.Flex1{
+    /* asosiy o'qni gorizontal holatga keltiradi (default holat) */
+    /* flex-direction: row; */
+    /* asosiy o'qni vertikal xolatga keltiradi */
+    /* flex-direction: column; */
+    /* asosiy o'q(element)ni teskari xolatga o'tkazadi */
+    /* flex-direction: row-reverse; */
+    /* asosiy o'q(elemnt)ni tepadan pasga teskari xolatga o'tkazadi */
+    /* flex-direction: column-reverse; */
+    /* justify-content - bu xususiyat elementlarimizni asosiy o'q bo'yicha joylashtiradi */
+    justify-content: space-between;
+    /* flex-wrap: wrap; - bu xuxusiyat flex elementlarni keyingi qatorga o'tishiga ruxsat beradi */
+    /* flex-wrap: nowrap; - bu xususiyat flex elementlarni keyingi qatorga o'tishiga ruxsat bermaydi */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; bu xuxusiyat flex elementlarni pastki qatorga o'tkazadi */
+    row-gap: 20px;
+    column-gap: 10px;
+    /* elementlar orasidan joy ochish uchun ishlatiladi */
+    /* gap: 10px; */
+    /* bu xususiyat elementlarimizni yordamchi o'q bo'yicha joylashtiradi */
+    align-items: center;
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: baseline; */
+    /* align-items: stretch; */
+}
+.Flex-inner:nth-child(1){
+    background-color: black;
+    height: 150px;
+    font-size: 35px;
+}
+.Flex-inner:nth-child(2){
+    background-color: #382d2d;
+    height: 300px;
+    font-size: 25px;
+}
+.Flex-inner:nth-child(3){
+    background-color: #ccaeae;
+    height: 250px;
+    font-size: 15px;
+}
+.Flex-inner:nth-child(4){
+    background-color: #945353;
+    height: 200px;
+    font-size: 40px;
+}
